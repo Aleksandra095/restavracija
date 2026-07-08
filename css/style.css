@@ -11,7 +11,6 @@ background:#92bbc0;
 color:#200404fa;
 }
 
-
 header{
 
 display:flex;
@@ -45,8 +44,6 @@ color:#76523c;
 color:#c48b55;
 }
 
-
-
 nav a{
 
 margin-left:25px;
@@ -55,8 +52,9 @@ text-decoration:none;
 
 color:#444;
 
-}
+font-weight:700;
 
+}
 
 
 .burger{
@@ -70,7 +68,6 @@ background:none;
 border:0;
 
 }
-
 
 
 .hero{
@@ -90,19 +87,23 @@ background-position:center;
 
 display:flex;
 
+justify-content:center;
+
 align-items:center;
 
-padding:10%;
+text-align:center;
 
+padding:20px;
 
 color:white;
 
 }
 
-
 .hero-text{
 
-max-width:600px;
+max-width:800px;
+
+margin:auto;
 
 }
 
@@ -260,9 +261,75 @@ color:white;
 text-align:center;
 
 }
+.phone-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:30px;
+
+}
+
+
+.phone-buttons a{
+
+padding:15px 30px;
+
+background:#c48b55;
+
+color:white;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+
+.phone-buttons a:hover{
+
+background:#76523c;
+
+}
 
 @media(max-width:768px){
 
+    .hero{
+
+text-align:center;
+
+}
+
+
+.hero-text{
+
+max-width:100%;
+
+}
+
+
+.phone-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.phone-buttons a{
+
+width:90%;
+
+}
 
 nav{
 
