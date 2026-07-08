@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rest Pillow — Реставрація подушок</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        Rest<span>Pillow</span>
+    </div>
+
+    <nav id="menu">
+        <a href="#home">Головна</a>
+        <a href="#services">Послуги</a>
+        <a href="#works">Наші роботи</a>
+        <a href="#price">Ціна</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+
+    <button class="burger" onclick="toggleMenu()">☰</button>
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>
+Реставрація подушок
+<br>
+Повернемо комфорт вашому сну
+</h1>
+
+<p>
+Очищення, відновлення пуху, заміна наповнювача
+та нове життя для ваших улюблених подушок.
+</p>
+
+<a href="#contact" class="btn">
+Замовити реставрацію
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="advantages">
+
+<h2>Чому обирають нас?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🪶 Натуральний пух</h3>
+<p>
+Дбайливе очищення та відновлення наповнювача.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🧼 Глибока чистка</h3>
+<p>
+Видалення пилу, запахів та забруднень.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🧵 Новий чохол</h3>
+<p>
+Пошив якісних напірників під замовлення.
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="services">
+
+<h2>Наші послуги</h2>
+
+
+<div class="services">
+
+
+<div>
+<h3>Повна реставрація</h3>
+<p>
+Розбір, чистка, обробка пуху та складання подушки.
+</p>
+</div>
+
+
+<div>
+<h3>Заміна наповнювача</h3>
+<p>
+Підбір нового матеріалу для максимального комфорту.
+</p>
+</div>
+
+
+<div>
+<h3>Відновлення форми</h3>
+<p>
+Повертаємо подушці первісний вигляд.
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="works">
+
+<h2>До та після</h2>
+
+<div class="gallery">
+
+<img src="images/before.jpg" alt="До реставрації">
+
+<img src="images/after.jpg" alt="Після реставрації">
+
+</div>
+
+</section>
+
+
+
+
+<section id="price">
+
+<h2>
+Розрахунок вартості
+</h2>
+
+
+<div class="calculator">
+
+<label>
+Кількість подушок:
+</label>
+
+<input id="count" type="number" value="2" min="1">
+
+
+<select id="service">
+
+<option value="250">
+Чистка — 250 грн
+</option>
+
+<option value="500">
+Заміна наповнювача — 500 грн
+</option>
+
+<option value="800">
+Повна реставрація — 800 грн
+</option>
+
+</select>
+
+
+<h3>
+Вартість:
+<span id="total">
+500
+</span>
+грн
+</h3>
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="contact">
+
+<h2>
+Замовити реставрацію
+</h2>
+
+
+<form id="form">
+
+<input 
+type="text"
+placeholder="Ваше ім'я"
+required>
+
+
+<input 
+type="tel"
+placeholder="Телефон"
+required>
+
+
+<textarea placeholder="Коментар"></textarea>
+
+
+<button class="btn">
+Відправити заявку
+</button>
+
+
+</form>
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 RestPillow. Всі права захищені.
+</p>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
