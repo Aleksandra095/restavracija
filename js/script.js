@@ -1,60 +1,22 @@
-function toggleMenu(){
+function toggleMenu() {
 
-let menu=document.getElementById("menu");
+    const menu = document.getElementById("menu");
 
-if(menu.style.display==="block"){
-menu.style.display="none";
-}
-else{
-menu.style.display="block";
-}
-
-}
-
-
-let count=document.getElementById("count");
-
-let service=document.getElementById("service");
-
-let total=document.getElementById("total");
-
-
-function calculate(){
-
-let price=
-Number(service.value);
-
-let quantity=
-Number(count.value);
-
-total.innerHTML=
-price*quantity;
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
 
 }
 
-count.addEventListener(
-"input",
-calculate
-);
+// При зміні розміру вікна повертаємо меню до нормального стану
+window.addEventListener("resize", function () {
 
-service.addEventListener(
-"change",
-calculate
-);
+    const menu = document.getElementById("menu");
 
-document
-.getElementById("form")
-.addEventListener(
-"submit",
-function(e){
+    if (window.innerWidth > 768) {
+        menu.style.display = "";
+    }
 
-e.preventDefault();
-
-alert(
-"Дякуємо! Ми зв'яжемося з вами найближчим часом."
-);
-
-this.reset();
-
-}
-);
+});
