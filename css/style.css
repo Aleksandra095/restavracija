@@ -13,41 +13,56 @@ body{
     background:#f3eee5;
     color:#200404;
     line-height:1.6;
+    padding-top:90px;
 }
 
 /* ================= HEADER ================= */
 
 header{
+
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:15px 8%;
+    padding:16px 8%;
 
-    background:#bfdfe3;
-
-    position:sticky;
+    position:fixed;
     top:0;
+    left:0;
+    width:100%;
+
     z-index:1000;
 
-    box-shadow:0 3px 12px rgba(0,0,0,.15);
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 8px 24px rgba(0,0,0,.12);
+
+    transition:.3s;
+
 }
 
 .logo img{
-    display:block;
-}
-
-nav{
-    display:flex;
-    align-items:center;
+    height:70px;
+    width:auto;
+    filter:drop-shadow(0 3px 8px rgba(0,0,0,.25));
 }
 
 nav a{
-    margin-left:25px;
+    margin-left:28px;
     text-decoration:none;
     color:#200404;
     font-weight:700;
+    font-size:17px;
     transition:.3s;
+}
+nav{
+    display:flex;
+    align-items:center;
 }
 
 nav a:hover{
@@ -56,9 +71,10 @@ nav a:hover{
 
 .burger{
     display:none;
-    font-size:30px;
     background:none;
     border:none;
+    color:white;
+    font-size:32px;
     cursor:pointer;
 }
 
@@ -68,15 +84,12 @@ nav a:hover{
 
     height:90vh;
 
-    background:
-    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-    url("../images/hero.jpg");
-
-    background-size:cover;
-    background-position:center;
+    position:relative;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
@@ -84,28 +97,106 @@ nav a:hover{
     padding:20px;
 
     color:white;
+
+    overflow:hidden;
+
 }
 
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-20px;
+
+    left:-20px;
+
+    right:-20px;
+
+    bottom:-20px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url("../images/portfolio105.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    filter:blur(5px);
+
+    transform:scale(1.05);
+
+    z-index:0;
+
+}
+
+
 .hero-text{
+
+    position:relative;
+
+    z-index:1;
+
     max-width:850px;
+
 }
 
 .hero h1{
-    font-size:52px;
+
+    font-family:'Playfair Display', serif;
+
+    font-size:54px;
+
+    font-weight:800;
+
+    line-height:1.15;
+
     margin-bottom:20px;
+
+    color:white;
+
+    letter-spacing:.5px;
+
 }
+
 
 .hero .subtitle{
-    font-size:30px;
-    font-weight:bold;
+
+    font-family:'Montserrat', sans-serif;
+
+    font-size:28px;
+
+    font-weight:600;
+
     color:white;
-    margin-bottom:20px;
+
+    margin-bottom:25px;
+
 }
 
+
 .hero p{
-    font-size:20px;
-    margin-bottom:30px;
+
+    font-family:'Montserrat', sans-serif;
+
+    font-size:19px;
+
+    font-weight:400;
+
+    line-height:1.7;
+
+    max-width:700px;
+
+    margin:0 auto 35px;
+
 }
+
 
 /* ================= PHONE BUTTONS ================= */
 
@@ -266,13 +357,15 @@ nav{
 
     position:absolute;
 
-    top:80px;
+    top:90px;
 
     left:0;
 
     width:100%;
 
-    background:white;
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
 
     flex-direction:column;
 
@@ -281,7 +374,6 @@ nav{
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 
 }
-
 nav a{
 
     margin:12px 0;
@@ -303,15 +395,11 @@ nav a{
 }
 
 .hero h1{
-
-    font-size:34px;
-
+    font-size:36px;
 }
 
 .hero .subtitle{
-
-    font-size:24px;
-
+    font-size:22px;
 }
 
 .hero p{
