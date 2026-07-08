@@ -7,8 +7,8 @@ font-family:Arial,sans-serif;
 
 
 body{
-background:#faf7f2;
-color:#333;
+background:#92bbc0;
+color:#200404fa;
 }
 
 
@@ -20,7 +20,7 @@ align-items:center;
 
 padding:20px 8%;
 
-background:white;
+background:#bfdfe3;
 
 position:sticky;
 top:0;
@@ -261,9 +261,6 @@ text-align:center;
 
 }
 
-
-
-
 @media(max-width:768px){
 
 
@@ -301,15 +298,11 @@ display:block;
 
 }
 
-
-
 .hero h1{
 
 font-size:32px;
 
 }
-
-
 
 .cards,
 .services{
@@ -332,6 +325,4 @@ flex-direction:column;
 width:100%;
 
 }
-
-
 }
